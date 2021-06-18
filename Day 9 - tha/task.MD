@@ -1,4 +1,4 @@
-## Heenlo Everyone
+✅## Heenlo Everyone
 
 <p>this keyword </p>
 
@@ -23,30 +23,30 @@
 <ul>
 <li>HTML
   <ul>
-    <li>[❌] Add parent Container</li>
-    <li>[❌] Add two Heading tags</li>
-    <li>[❌] Add movie-screen</li>
-    <li>[❌] Add main-area</li>
+    <li>[✅] Add parent Container</li>
+    <li>[✅] Add two Heading tags</li>
+    <li>[✅] Add movie-screen</li>
+    <li>[✅] Add main-area</li>
   </ul>
 </li>
 <br>
 <li>CSS
   <ul>
-    <li>[❌] Add Basic styling</li>
-    <li>[❌] Add Flexbox to top heading</li>
-    <li>[❌] Create Grid for main-area</li>
+    <li>[✅] Add Basic styling</li>
+    <li>[✅] Add Flexbox to top heading</li>
+    <li>[✅] Create Grid for main-area</li>
     <!-- <li>[❌] Add booked Class</li> -->
   </ul>
 </li>
 <br>
 <li>Javascript
   <ul>
-    <li>[❌] Select The tags which you want to work with</li>
-    <li>[❌] Select all nodes with <code>querySelector()</code></li>
-    <li>[❌] Add class using JS DOM/ play with <code>classList</code> property and  <code>toogle() / contains() </code>methods </li>
-    <li>[❌] Write a function to increase and decrease the values of spans</li>
-    <li>[❌] Add Event listner to toggle the Class</li>
-    <li>[❌] Add booked class to css</li>
+    <li>[✅] Select The tags which you want to work with</li>
+    <li>[✅] Select all nodes with <code>querySelector()</code></li>
+    <li>[✅] Add class using JS DOM/ play with <code>classList</code> property and  <code>toogle() / contains() </code>methods </li>
+    <li>[✅] Write a function to increase and decrease the values of spans</li>
+    <li>[✅] Add Event listner to toggle the Class</li>
+    <li>[✅] Add booked class to css</li>
   </ul>
 </li>
 </ul>
