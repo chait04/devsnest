@@ -37,6 +37,7 @@
 
 .seats {
   background-color: #793322c7;
+  opacity: 0.5;
 }
 
 .seats:hover {
