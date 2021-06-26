@@ -30,7 +30,6 @@
   <br />
 </ul>
 
-
 - APi `https://dog.ceo/api/breed/hound/images/random/10`
 
 <details>
@@ -139,3 +138,35 @@ A promise in JavaScript is similar to a promise in real life. When we make a pro
 
 <br>
 <hr>
+
+<details>
+  <summary>Caching</summary>
+
+  <p>
+    All browsers attempt to keep local copies of static assets in an effort to
+    reduce page load times and minimize network traffic.
+  </p>
+  <p>
+    <strong>Case 1:</strong> User has not visited the site before<br />
+    The browser won’t have any files cached for the site so it will fetch
+    everything from the server.
+  </p>
+  <p>
+    <strong>Case 2:</strong> User has visited the site before<br />
+    The browser will retrieve the HTML page from the web server but consult its
+    cache for the static assets (JavaScript, CSS, images).
+  </p>
+  <p>
+    <strong>Cache-Control </strong>
+    The Cache-Control header has a number of directives we can set to control
+    cache behavior, expiration, and validation. These can be combined together
+    as well.
+  </p>
+  <p>
+    <strong>Expiration</strong>
+    Cache-Control: max-age=60 This specifies the length of time in seconds the
+    resource should be cached.So a max-age=60 means that it should be cached for
+    1 minute. RFC 2616 recommends that the maximum value for should no longer
+    than 1 year (max-age=31536000).
+  </p>
+</details>
