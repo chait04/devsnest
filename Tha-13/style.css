@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: url(https://media.giphy.com/media/3ov9k1173PdfJWRsoE/giphy.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  main {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 84vw;
+    position: sticky;
+    top: 0;
+    margin-top: 8px;
+    background-color: rgb(163, 10, 61);
+    padding: 10px;
+    border-radius: 20px;
+  }
+  @media screen and (max-width: 768px) {
+      nav{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+  }
+  
+  h1 {
+    color: #fff;
+    font-size: 1.3em;
+  }
+  
+  
+input {
+    height: 25px;
+    border-radius: 30px;
+    outline: none;
+    padding: 0px 4px;
+    border: none;
+  }
+  
+  
+  button {
+    border-radius: 30px;
+    color: white;
+    background-color: rgb(197, 90, 131);
+    padding: 4px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+  }
+  
+  article {
+    margin-top: 15px;
+    width: 80vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+.doggo {
+  padding: 5px;
+}
+
+.doggo:hover {
+  border: solid 5px #fe019a;
+  padding: 2px;
+  border-radius: 10px;
+}
+
+img {
+  height: 300px;
+  width: 300px;
+}
+
+.notFound {
+  color: #fff;
+  border: 2px rgb(90, 10, 10) solid;
+  padding: 8px;
+  border-radius: 20px;
+  background-color: rgb(163, 10, 61);
+  margin: auto;
+  height: 80px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+}
+.notFound:hover{
+    background-color: #fff;
+    color: #000;
+    transition: 0.3s all;
+}
+
+
