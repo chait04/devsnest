@@ -1,0 +1,37 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chessBoard {
+  height: 300px;
+  width: 300px;
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.row {
+  display: flex;
+}
+
+.square {
+  border: 1px solid black;
+  height: 100%;
+  width: 100%;
+}
+
+.row:nth-child(even) .square:nth-child(even){
+    background-color: black;
+}
+
+.row:nth-child(odd) .square:nth-child(){
+    background-color: black;
+} */
