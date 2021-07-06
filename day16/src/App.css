@@ -12,6 +12,21 @@ body {
   /* background-color: rgb(255, 204, 252); */
 }
 
+header{
+  width: 80vw;
+position: fixed;
+top: 0;
+right: 140px;
+/* margin-top: 5px; */
+}
+
+.headerInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 nav {
   position: sticky;
   width: 80vw;

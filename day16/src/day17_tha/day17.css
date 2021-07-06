@@ -1,0 +1,40 @@
+.day17ParentDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 300px;
+  overflow-y: scroll;
+  margin-top: 30px;
+}
+
+.foodList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+  margin-top: 1.5rem;
+  background-color: rgb(255, 196, 206);
+  width: 100%;
+  color: rgb(116, 0, 20);
+  border-radius: 15px;
+}
+
+.foodList h3 {
+  color: rgb(93, 2, 2);
+  padding-top: 4px;
+}
+
+.day17ParentDiv::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+.day17ParentDiv::-webkit-scrollbar-track {
+  background: rgba(246, 197, 236, 0.3); /* color of the tracking area */
+}
+
+.day17ParentDiv::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 109, 206); /* color of the scroll thumb */
+  border-radius: 40px; /* roundness of the scroll thumb */
+}
