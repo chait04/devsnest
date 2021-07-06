@@ -1,56 +1,48 @@
-* {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(255, 204, 252);
-  }
-  
-  .App {
-    display: flex;
-    min-height: 300px;
-    width: 300px;
-    flex-direction: column;
-    background-color: rgb(235, 66, 94);
-    align-items: flex-start;
-    justify-content: space-between;
-    border: none;
-    border-radius: 20px;
-    box-shadow: 0px 10px 137px rgb(235 66 94);
-  
-    overflow: hidden;
-  }
-  
-  .App:hover {
-    transform: translate3d(5px, 10px, 20px);
-    box-shadow: 10px 12px 8px rgb(105, 4, 21);
-  }
-  
-  .imgDiv {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  
-  img {
-    width: 100%;
-    background-size: cover;
-  }
-  
-  .mainHeading,
-  .mainPara {
-    color: #fff;
-    margin-top: 10px;
-  }
-  
-  .mainText {
-    padding-bottom: 25px;
-    padding-left: 5px;
-  }
-  
+.memeParentDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.memeApp {
+  display: flex;
+  min-height: 300px;
+  width: 300px;
+  flex-direction: column;
+  background-color: rgb(235, 66, 94);
+  align-items: flex-start;
+  justify-content: space-between;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 10px 137px rgb(235 66 94);
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.memeApp:hover {
+  transform: translate3d(5px, 10px, 20px);
+  box-shadow: 10px 12px 8px rgb(105, 4, 21);
+}
+
+.memeImgDiv {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.memeImg {
+  width: 100%;
+  background-size: cover;
+}
+
+.memeMainHeading,
+.memeMainPara {
+  color: #fff;
+  margin-top: 10px;
+}
+
+.memeMainText {
+  padding-bottom: 25px;
+  padding-left: 5px;
+}

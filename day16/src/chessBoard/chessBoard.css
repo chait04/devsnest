@@ -1,10 +1,4 @@
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.App {
+.chessApp {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -18,20 +12,20 @@
   grid-template-rows: repeat(8, 1fr);
 }
 
-.row {
+.chessRow {
   display: flex;
 }
 
-.square {
+.chessSquare {
   border: 1px solid black;
   height: 100%;
   width: 100%;
 }
 
-.row:nth-child(even) .square:nth-child(even){
-    background-color: black;
+.chessRow:nth-child(even) .chessSquare:nth-child(even) {
+  background-color: black;
 }
 
-.row:nth-child(odd) .square:nth-child(){
-    background-color: black;
-} */
+.chessRow:nth-child(odd) .chessSquare:nth-child(odd) {
+  background-color: black;
+}

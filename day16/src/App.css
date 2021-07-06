@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(255, 204, 252); */
+}
+
+nav {
+  position: sticky;
+  width: 80vw;
+  margin-top: 5px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+  height: 40px;
+  background-color: rgb(28, 57, 136);
+  border-radius: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+}
+
+section {
+  text-align: center;
+}
