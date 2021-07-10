@@ -4,7 +4,7 @@ const FoodList = ({props}) => {
     return (
         <div className="foodList">
             <h1>{props.food}</h1>
-            <h3>{props.food} contains this much amount of {props.calorie} </h3>        </div>
+            <h3>{props.food} contains {props.calorie} amount of calories </h3></div>
     )
 }
 

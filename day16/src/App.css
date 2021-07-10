@@ -4,27 +4,27 @@
   box-sizing: border-box;
 }
 
-body {
+main {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   /* background-color: rgb(255, 204, 252); */
 }
 
-header{
+header {
   width: 80vw;
-position: fixed;
-top: 0;
-right: 140px;
-/* margin-top: 5px; */
+  position: fixed;
+  top: 0;
+  right: 140px;
 }
 
-.headerInfo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.headerInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 nav {
@@ -50,3 +50,5 @@ nav ul li a {
 section {
   text-align: center;
 }
+
+

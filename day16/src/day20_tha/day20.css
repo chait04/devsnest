@@ -1,4 +1,4 @@
-.day17ParentDiv {
+.day20ParentDiv {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,10 +8,11 @@
   overflow-y: scroll;
   margin-top: 30px;
   padding: 0px 2em;
+  box-shadow: 3px 5px 5px #ff99ab;
 
 }
 
-.foodList {
+.day20foodList {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,20 +25,49 @@
   padding: 1.1em;
 }
 
-.foodList h3 {
+.day20foodList h3 {
   color: rgb(93, 2, 2);
   padding-top: 4px;
 }
 
-.day17ParentDiv::-webkit-scrollbar {
+.day20foodList:hover {
+  box-shadow: 3px 5px 5px #f40932;
+  transition: 0.2s all ease-in-out;
+}
+
+/* Delete Button */
+
+.foodListItemDelete {
+  width: 5rem;
+  height: 3em;
+  margin-top: 4px;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  text-align: center;
+  font-size: 16px;
+}
+.foodListItemDelete:hover {
+  background-color: pink;
+  color: white;
+  font-size: 16px;
+  border: 3px solid white;
+}
+
+
+/* Custom Scroll Bar */
+
+.day20ParentDiv::-webkit-scrollbar {
   width: 12px; /* width of the entire scrollbar */
 }
 
-.day17ParentDiv::-webkit-scrollbar-track {
+.day20ParentDiv::-webkit-scrollbar-track {
   background: rgba(246, 197, 236, 0.3); /* color of the tracking area */
 }
 
-.day17ParentDiv::-webkit-scrollbar-thumb {
+.day20ParentDiv::-webkit-scrollbar-thumb {
   background-color: rgb(255, 109, 206); /* color of the scroll thumb */
   border-radius: 40px; /* roundness of the scroll thumb */
 }
