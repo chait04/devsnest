@@ -1,0 +1,13 @@
+#day18 {
+  width: 250px;
+  height: 250px;
+  border: 20px solid black;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+#day18 .day18BChessBox {
+  width: 25px;
+  height: 25px;
+  background-color: green;
+}

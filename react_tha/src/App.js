@@ -4,6 +4,7 @@ import ChessBoard from './chessBoard/ChessBoard';
 import MemeCard from './memeCard/MemeCard';
 import Day17 from './day17_tha/Day17';
 import Day20 from './day20_tha/Day20';
+import Day18 from './day18/Day18';
 import './App.css';
 
 const App = () => {
@@ -24,6 +25,10 @@ const App = () => {
             <Day17 />
           </Route>
           <Route exact path='/day18'>
+            <Home dayNum='18' show={true} />
+            <Day18 />
+          </Route>
+          <Route exact path='/day20'>
             <Home dayNum='20' show={true} />
             <Day20 />
           </Route>
@@ -49,7 +54,10 @@ export const Home = ({ dayNum, show }) => {
               <Link to='/day17'>Day-17</Link>
             </li>
             <li>
-              <Link to='/day18'>Day-20</Link>
+              <Link to='/day18'>Day-18</Link>
+            </li>
+            <li>
+              <Link to='/day20'>Day-20</Link>
             </li>
           </ul>
         </nav>
