@@ -5,6 +5,7 @@ import MemeCard from './memeCard/MemeCard';
 import Day17 from './day17_tha/Day17';
 import Day20 from './day20_tha/Day20';
 import Day18 from './day18/Day18';
+import Counter19 from './day19/Counter19';
 import './App.css';
 
 const App = () => {
@@ -27,6 +28,10 @@ const App = () => {
           <Route exact path='/day18'>
             <Home dayNum='18' show={true} />
             <Day18 />
+          </Route>
+          <Route exact path='/day19'>
+            <Home dayNum='19' show={true} />
+            <Counter19 />
           </Route>
           <Route exact path='/day20'>
             <Home dayNum='20' show={true} />
@@ -55,6 +60,9 @@ export const Home = ({ dayNum, show }) => {
             </li>
             <li>
               <Link to='/day18'>Day-18</Link>
+            </li>
+            <li>
+              <Link to='/day19'>Day-19</Link>
             </li>
             <li>
               <Link to='/day20'>Day-20</Link>
