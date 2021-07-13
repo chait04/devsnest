@@ -22,7 +22,8 @@ export const Box = ({ alter, i }) => {
       <div
         style={{
           backgroundColor: i % 2 === 0 ? 'black' : 'white',
-          height: "20px"
+          height: '20px',
+          padding: '12px',
         }}
         className='day18BChessBox'></div>
     );
@@ -31,6 +32,7 @@ export const Box = ({ alter, i }) => {
       <div
         style={{
           backgroundColor: i % 2 === 0 ? 'white' : 'black',
+          padding: '12px',
         }}></div>
     );
   }

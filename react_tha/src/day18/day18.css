@@ -4,6 +4,7 @@
   border: 20px solid black;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
+  padding: 5px;
 }
 
 #day18 .day18BChessBox {
