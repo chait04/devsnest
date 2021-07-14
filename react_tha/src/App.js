@@ -6,6 +6,7 @@ import Day17 from './day17_tha/Day17';
 import Day20 from './day20_tha/Day20';
 import Day18 from './day18/Day18';
 import Counter19 from './day19/Counter19';
+import Doubt from './Doubt session/doubt';
 import './App.css';
 
 const App = () => {
@@ -37,6 +38,10 @@ const App = () => {
             <Home dayNum='20' show={true} />
             <Day20 />
           </Route>
+          <Route exact path='/doubt'>
+            <Home dayNum='20' show={true} />
+            <Doubt />
+          </Route>
         </Switch>
       </Router>
     </main>
@@ -66,6 +71,9 @@ export const Home = ({ dayNum, show }) => {
             </li>
             <li>
               <Link to='/day20'>Day-20</Link>
+            </li>
+            <li>
+              <Link to='/doubt'>Doubt</Link>
             </li>
           </ul>
         </nav>

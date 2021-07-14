@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import data from './data.json';
 import FoodList from './FoodList';
-import './day20.css';
+// import './day20.css';
+
 
 const Day20 = () => {
 
