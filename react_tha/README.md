@@ -1,6 +1,5 @@
 # Day 16 - THA
 
-
 <ul>
 <li>PART- 1 ( ChessBoard )
   <ul>
@@ -33,16 +32,16 @@ chess -> https://9vj0n.csb.app/
 
 - Fuck everything React is literally very easy
 
-------------------------------
+---
 
 ### Prerequisites
 
 - Html, css , js fundamentals
 - ES6
 - Js- this keyword, filter, map and reduce
-- ES6 - let & const, arrow functions, template literals, default paramter, object literals, rest and spread operators and destructuring  assignment
+- ES6 - let & const, arrow functions, template literals, default paramter, object literals, rest and spread operators and destructuring assignment
 
-------------------------------------------
+---
 
 - React from Scratch
 
@@ -52,36 +51,38 @@ chess -> https://9vj0n.csb.app/
 * Redux
 * Utilities
 
-----------------------------------------------
+---
+
 # How to install react
 
-* npx -> npx-create-react-app <project-_name>
+- npx -> npx-create-react-app <project-\_name>
 
-- <code> 2nd way</code>
+* <code> 2nd way</code>
 
-* npm install create-react-app -g
-* create-react-app <project_name>
+- npm install create-react-app -g
+- create-react-app <project_name>
 
-- Install ES7 & React snippets by- dsznajder in vs code
+* Install ES7 & React snippets by- dsznajder in vs code
 
--------------------------------------------------
+---
 
 ## What is component
 
-* We have root app Component
-* They are reusable
-* component code is placed in JS file with (.jsx) extension
-* We have two types of component-:- stateless functional component & stateful class component
+- We have root app Component
+- They are reusable
+- component code is placed in JS file with (.jsx) extension
+- We have two types of component-:- stateless functional component & stateful class component
 
 ## Functional Component
 
-* It is a js function which returns html to show UI
-* If you export component by default you can import it by any name.
-* Exporting without default- In this case you have to import the component with the same name. In curly braces <code>{ }</code> .
+- It is a js function which returns html to show UI
+- If you export component by default you can import it by any name.
+- Exporting without default- In this case you have to import the component with the same name. In curly braces <code>{ }</code> .
 
------------------------------------------------------
+---
 
 ## JSX
+
 - JS XML (JSX- extension to the js language synta)
 - Write XML-like code for elements and components.
 - JSX tags have a tag name, attributes, and children.
@@ -89,5 +90,3 @@ chess -> https://9vj0n.csb.app/
 - JSX makes your react code simpler and elegant
 - we Use <code>{ }</code> to write javascript inside JSX
 - You cannot return two things in JS, so wrap the whole thing in empty tag <code><> </></code>
-
-
