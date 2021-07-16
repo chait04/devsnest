@@ -14,4 +14,6 @@ const Day17 = () => {
   );
 };
 
+//  parent -> child
+
 export default Day17;
