@@ -1,6 +1,7 @@
 # Day 26
 
 ## THA
+
 React : - 6
 Redux : - `more than 6 files`
 
@@ -15,7 +16,6 @@ Redux : - `more than 6 files`
 
 - Examples https://stackblitz.com/edit/usereducer-examples-must
 
-
 <br />
 <br />
 
@@ -29,25 +29,82 @@ Redux : - `more than 6 files`
 
 # Plan
 
-> app 
+> store
+
+```jsx
+import { createStore } from 'redux';
+
+// it takes reducer function as an parameter
+const store = createStore();
+```
+
 <br />
 
-> store 
-<br />
+> create state
 
-> actions
+# State
+
+```jsx
+let initialState = {
+  firstName: '',
+  lastName: '',
+};
+```
+
 <br />
 
 > action types
+
+```js
+updateFirstName = 'updateFirstName';
+updateLastName = 'updateFirstName';
+```
+
 <br />
+
+> action creators
+
+```js
+// firstName updater
+const updateFirstNameInput = (input) => {
+  return {
+    type: updateFistName,
+    payload: input,
+  };
+};
+
+// lastName updater
+const updateLastName = (input) => {
+  return {
+    type: updateLastName,
+    payload: input,
+  };
+};
+```
+
+> <br />
 
 > reducer
-<br />
+
+```js
+case updateFirstName:
+    firstName: "Do something"
+
+case updateLastName:
+    lastName: "do Somethignwith last name "
+
+```
+
+> <br />
 
 > import reducer in store...
-<br />
+> <br />
 
 > we need to provide redux store to its child
 
 <br />
 <br />
+
+<hr>
+
+![redux](./redux.png)
