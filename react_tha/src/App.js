@@ -9,6 +9,7 @@ import Counter19 from './day19/Counter19';
 import Doubt from './Doubt session/doubt';
 import Day23 from './day23/Day23';
 import './App.css';
+import Weather from './Weather/Weather';
 
 const App = () => {
   return (
@@ -43,9 +44,9 @@ const App = () => {
             <Home dayNum='20' show={true} />
             <Doubt />
           </Route>
-          <Route exact path='/day23'>
-            <Home dayNum='23' show={false} />
-            <Day23 />
+          <Route exact path='/weather'>
+            <Home dayNum='weather' show={false} />
+            <Weather />
           </Route>
         </Switch>
       </Router>
@@ -81,7 +82,7 @@ export const Home = ({ dayNum, show }) => {
               <Link to='/doubt'>Doubt</Link>
             </li>
             <li>
-              <Link to='/day23'>day23</Link>
+              <Link to='/weather'>Weather</Link>
             </li>
           </ul>
         </nav>
