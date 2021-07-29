@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import useFetch from './useFetch';
+// import dotenv from 'dotenv';
+
+// dotenv.config();
 
 const Weather = () => {
   const [city, setCity] = useState('mumbai');
-  const url = `https://api.weatherapi.com/v1/current.json?key=9ead8543da2d4756aa953451212807&q=${city}`;
+  const url = `https://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_API_KEY}&q=${city}`;
 
   const [apiData, fetchData, loading, error] = useFetch(url);
 
