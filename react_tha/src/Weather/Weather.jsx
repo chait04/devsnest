@@ -5,7 +5,7 @@ const Weather = () => {
   const [city, setCity] = useState('mumbai');
   const url = `https://api.weatherapi.com/v1/current.json?key=9ead8543da2d4756aa953451212807&q=${city}`;
 
-  const [apiData,  loading, error, fetchData] = useFetch(url);
+  const [apiData, fetchData, loading, error] = useFetch(url);
 
   let handleChange = (e) => {
     let newCity = e.target.value;
@@ -25,7 +25,7 @@ const Weather = () => {
       </h1>
 
       {/*                 form                  */}
-      
+
       <form
         style={{
           padding: '20px',

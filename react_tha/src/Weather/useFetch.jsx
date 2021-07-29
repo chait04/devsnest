@@ -1,36 +1,42 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 const useFetch = (url) => {
   const [apiData, setApiData] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState('');
+  const [error, setError] = useState("");
 
-  let fetchData = async () => {
+  async function fetchData() {
     try {
       let res = await fetch(url);
-      //   setLoading(true)
+      //   console.log(res);
       if (!res.ok) {
-        throw new Error(`Wrong query or Url is wrong`);
+        throw new Error(
+          `ITs coz of query and people who are not attending lectures`
+        );
+      } else {
+        let data = await res.json();
+        console.log(data);
+        setLoading(false);
+        setApiData(data);
+        setError("");
       }
-      let data = await res.json();
-      setLoading(false);
-      setApiData(data);
-      setError("")
     } catch (error) {
-        // 500 server error
+      console.log(error);
       setError(error.message);
-      setLoading(false)
-      setApiData([])
+      setLoading(false);
+      setApiData([]);
     }
-  };
+  }
 
   useEffect(() => {
     setTimeout(() => {
       fetchData();
     }, 2000);
+
+  
   }, []);
 
-  return [apiData, loading, error, fetchData];
+  return [apiData, fetchData, loading, error];
 };
 
 export default useFetch;
