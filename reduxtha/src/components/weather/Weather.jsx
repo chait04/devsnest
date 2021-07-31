@@ -6,6 +6,7 @@ import { fetchData, getCity } from '../../redux/weather/weatherActions';
 const Weather = () => {
   const cityName = useSelector((state) => state.weather.cityName);
   const weatherData = useSelector((state) => state.weather.data);
+  const error = useSelector((state) => state.weather.error);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -31,6 +32,7 @@ const Weather = () => {
       </form>
       <section>
         {/* {JSON.stringify(weatherData.location)} */}
+        {error && <p>{error}</p>}
         {weatherData.location && (
           <div>
             <h2>{weatherData.location.name}</h2>

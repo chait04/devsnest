@@ -1,8 +1,9 @@
-import { GET_API_DATA, GET_CITY } from './weatherActionTypes';
+import { GET_API_DATA, GET_CITY, NETWORK_ERROR } from './weatherActionTypes';
 
 const initialState = {
   data: [],
   cityName: 'pune',
+  error: '',
 };
 
 export function weatherReducer(state = initialState, action) {
@@ -13,10 +14,17 @@ export function weatherReducer(state = initialState, action) {
         cityName: action.payload,
       };
     case GET_API_DATA:
-        return {
-          ...state,
-          data: action.payload
-        }
+      return {
+        ...state,
+        data: action.payload,
+        error: '',
+      };
+    case NETWORK_ERROR:
+      return {
+        ...state,
+        error: action.payload,
+        data: []
+      };
     default:
       return state;
   }

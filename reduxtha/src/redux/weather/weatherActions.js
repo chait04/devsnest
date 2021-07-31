@@ -1,4 +1,4 @@
-import { GET_API_DATA, GET_CITY } from './weatherActionTypes';
+import { GET_API_DATA, GET_CITY, NETWORK_ERROR } from './weatherActionTypes';
 
 // action creators
 
@@ -18,12 +18,26 @@ export function getApiData(apiData) {
   };
 }
 
+export function networkError(error) {
+  return {
+    type: NETWORK_ERROR,
+    payload: error,
+  };
+}
+
 // action creator to fetch Data
 export function fetchData(cityName) {
   return async (dispatch) => {
-    const url = `https://api.weatherapi.com/v1/current.json?key=9ead8543da2d4756aa953451212807&q=${cityName}`;
-    let res = await fetch(url);
-    let apiData = await res.json();
-    dispatch(getApiData(apiData));
+    try {
+      const url = `https://api.weatherapi.com/v1/current.json?key=9ead8543da2d4756aa953451212807&q=${cityName}`;
+      let res = await fetch(url);
+      if(!res.ok){
+        throw new Error(`query might be wroing & Its bcoz you are not attending live session`)
+      }
+      let apiData = await res.json();
+      dispatch(getApiData(apiData));
+    } catch (error) {
+      dispatch(networkError(error.message));
+    }
   };
 }
